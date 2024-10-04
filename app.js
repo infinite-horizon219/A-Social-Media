@@ -36,7 +36,7 @@ app.use(passport.initialize());
 app.use('/', (req, res, next) => {
     let url;
     if (process.env.NODE_ENV === "PRODUCTION") {
-        url = "https://jayantgoel001.github.io";
+        url = "https://infinite-horizon219.github.io";
     } else {
         url = "http://localhost:4200";
     }
@@ -47,11 +47,11 @@ app.use('/', (req, res, next) => {
 
 app.use('/api', usersRouter);
 app.get("*", function (req, res) {
-    res.redirect("https://jayantgoel001.github.io/A-Social-Media/");
+    res.redirect("https://infinite-horizon219.github.io/A-Social-Media/");
 })
 
 app.use(function (req, res) {
-    res.redirect("https://jayantgoel001.github.io/A-Social-Media/");
+    res.redirect("https://infinite-horizon219.github.io/A-Social-Media/");
 });
 
 app.use(function (err, req, res) {
